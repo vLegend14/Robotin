@@ -83,7 +83,6 @@ void face_render(FaceState *state) {
         ojo_blink(u8g2, EYE_L_X + offset);
         ojo_blink(u8g2, EYE_R_X + offset);
     } else {
-        // 🔴 Fix: NEUTRAL ya no dibuja su boca acá, se unifica abajo
         switch (state->emocion) {
             case EMOCION_NEUTRAL:
                 ojo_solido(u8g2, EYE_L_X + offset);
@@ -124,8 +123,6 @@ void face_render(FaceState *state) {
     }
 
     // ─── BOCA ─────────────────────────────
-    // 🔴 Fix: fuera del if/else de blink → la boca persiste durante el parpadeo
-    // 🔴 Fix: NEUTRAL unificado acá junto al resto
     switch (state->emocion) {
         case EMOCION_NEUTRAL:
         case EMOCION_HAPPY:
