@@ -1,0 +1,18 @@
+# PlatformIO - Binarios y librerías descargadas
+.pio/
+.pioenvs/
+.piolibdeps/
+
+# Herramientas de Lenguaje (LSP) y Cache
+.cache/
+.clangd/
+compile_commands.json
+
+# Unit Testing
+.test/
+
+# VS Code
+.vscode/
+
+# Configuración específica del Hardware
+sdkconfig.esp32-c3-devkitm-1

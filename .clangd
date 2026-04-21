@@ -1,0 +1,9 @@
+CompileFlags:
+  CompilationDatabase: .pio/build/esp32-c3-devkitm-1
+  Remove:
+    - -fno-shrink-wrap
+    - -fno-tree-switch-conversion
+    - -fstrict-volatile-bitfields
+    - -fstrict-volatile-bitfields
+    - -mlongcalls
+    - -mtext-section-literals

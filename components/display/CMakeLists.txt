@@ -1,0 +1,3 @@
+idf_component_register(SRCS "display.c"
+                       INCLUDE_DIRS "."
+                       REQUIRES u8g2 driver freertos esp_common)
