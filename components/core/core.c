@@ -100,7 +100,6 @@ void robot_update(Robot *r, uint32_t dt, bool boton) {
     }
 
     // ─── BOTÓN ─────────────────────────────
-    // Fuera de la FSM → responde inmediatamente sin importar el estado actual
     if (boton) {
         r->emocion_anterior = r->emocion_actual;
         r->emocion_actual   = emocion_aleatoria(r->emocion_anterior);
